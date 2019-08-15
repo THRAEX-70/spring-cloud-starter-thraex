@@ -1,11 +1,11 @@
-package org.thraex.spring.cloud.config;
+package org.thraex.spring.cloud.sample.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.thraex.spring.cloud.property.ThraexProperties;
-import org.thraex.spring.cloud.service.ThraexService;
+import org.thraex.spring.cloud.sample.property.ThraexProperties;
+import org.thraex.spring.cloud.sample.service.ThraexService;
 
 /**
  * <PRE>

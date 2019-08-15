@@ -1,4 +1,4 @@
-package org.thraex.spring.cloud.property;
+package org.thraex.spring.cloud.sample.property;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

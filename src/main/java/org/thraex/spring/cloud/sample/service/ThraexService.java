@@ -1,9 +1,9 @@
-package org.thraex.spring.cloud.service;
+package org.thraex.spring.cloud.sample.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.thraex.spring.cloud.property.ThraexProperties;
+import org.thraex.spring.cloud.sample.property.ThraexProperties;
 
 /**
  * @Author 鬼王
