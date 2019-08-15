@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: THRAEX-APPLICATION-TEST
+
+thraex:
+  keyword: HANZO

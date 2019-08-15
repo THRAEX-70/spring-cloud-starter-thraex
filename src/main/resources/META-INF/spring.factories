@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.thraex.spring.cloud.config.ThraexAutoConfiguration
+
