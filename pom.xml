@@ -11,10 +11,17 @@
     <name>Spring Cloud Starter THRAEX</name>
     <description>Manual instance registration</description>
 
+    <organization>
+        <name>THRAEX</name>
+        <url>None</url>
+    </organization>
+
     <developers>
         <developer>
             <name>鬼王</name>
             <email>THRAEX@aliyun.com</email>
+            <organization>${organization.name}</organization>
+            <organizationUrl>${organization.url}</organizationUrl>
         </developer>
     </developers>
 
@@ -35,6 +42,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
-
 </project>

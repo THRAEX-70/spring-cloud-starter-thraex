@@ -9,6 +9,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("thraex")
 public class ThraexProperties {
 
+    /**
+     * Application Keyword
+     */
     private String keyword = "THRAEX";
 
     public String getKeyword() {
