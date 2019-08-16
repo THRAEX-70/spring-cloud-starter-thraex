@@ -9,8 +9,13 @@ import java.util.Map;
  * @Author 鬼王
  * @Date 2019/08/16 09:13
  */
-@ConfigurationProperties("eureka.client.thraex")
+@ConfigurationProperties(ThraexEurekaClientConfigBean.PREFIX)
 public class ThraexEurekaClientConfigBean {
+
+    /**
+     * Default prefix for THRAEX Eureka client config properties.
+     */
+    public static final String PREFIX = "eureka.client.thraex";
 
     /**
      * Flag to indicate that the THRAEX Eureka client is enabled.
