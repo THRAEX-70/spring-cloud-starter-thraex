@@ -20,20 +20,23 @@
         <developer>
             <name>鬼王</name>
             <email>THRAEX@aliyun.com</email>
-            <organization>${organization.name}</organization>
-            <organizationUrl>${organization.url}</organizationUrl>
+            <organization>${project.organization.name}</organization>
+            <organizationUrl>${project.organization.url}</organizationUrl>
         </developer>
     </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>8</java.version>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>2.1.7.RELEASE</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -44,14 +47,16 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- spring-boot-starter-parent and spring-boot-parent inherit spring-boot-dependencies -->
+            <!--
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <!-- spring-boot-starter-parent and spring-boot-parent inherit spring-boot-dependencies -->
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>2.1.7.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
